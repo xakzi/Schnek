@@ -40,9 +40,7 @@ public class Snake : MonoBehaviour
 
         if (ate)
         {
-            GameObject g = (GameObject)Instantiate(tailPrefab,
-                v,
-                Quaternion.identity);
+            GameObject g = (GameObject)Instantiate(tailPrefab, v, Quaternion.identity);
 
             tail.Insert(0, g.transform);
 
